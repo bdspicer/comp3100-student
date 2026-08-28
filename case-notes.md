@@ -18,7 +18,7 @@ and never did.
 |---|---|---|---|
 | 1 | During Task 2, I found a punch card, which was notably lacking the "registered" stamp. | I found it in the form of a .txt file in my inbox, using the "ls -la" command. I accessed its contents with the "cat" command. | Based on the information in the work order, I would guess that the loom didn't accept the punch card. My guess is that this has some connection to the disgruntled human computers. |
 | 1 | During Task 3, when I tried to access the manual page for write(1), I got the response: ""No manual entry for write in section 1."" | I used the command "man 1 write," a command that worked for my other classmates, multiple times, to no avail. | I am currently unsure of what this means or why it happened. |
-| 2 |  |  |  |
+| 2 | 2 May 1851 — 5 hrs computed by hand, uncompensated. — your diligent servant Closing line: 12 June — 6 hrs computed by hand, uncompensated. — your diligent servant | /home/daniel/.ledger-annex | I think the Engine still utilizes the human computers in some way, in Mechanical Turk fashion, and that whichever of these employees remain aren't being fully compensated for their work. |
 | 3 |  |  |  |
 | 4 |  |  |  |
 
@@ -36,6 +36,8 @@ costs you nothing.
 *Free-write space. What's your running theory? What doesn't add up yet? Revise this section any week — nobody's grading you on being right early, only on citing your own notes later.*
 Week 01:
   It seems that there is more to the story of the former employees of the computing room. The incorrigible note announcing the decision to deny their pensions and the mysterious punch card make two loose ends relating to these workers.
+Week 02:
+It seems that one or more of these human employees are still here in some way, even if that means that the Engine is copying a note left by one of them. The fact that this is unregistered makes me think that one of them may have some sort of administrative access to the Engine.
 
 *Tip: if two weeks' findings seem to point the same direction, say so
 in a note — connecting your own dots across weeks is exactly the
