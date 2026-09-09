@@ -39,13 +39,12 @@ int main(int argc, char *argv[])
      * TODO 1 -- Copy the desk.
      *
      * Call fork() and keep what it returns in `child`.
-     *
      * fork() returns TWICE, once in each process:
      *   in the copy (the child) it returns 0;
      *   in the original (the parent) it returns the child's pid;
      *   and if the copy could not be made, it returns -1 in the parent.
      * ------------------------------------------------------------------ */
-    pid_t child = -1;   /* <-- replace -1 with your fork() call */
+    pid_t child = fork();   /* <-- replace -1 with your fork() call */
 
     if (child < 0) {
         perror("pantograph: fork");
@@ -68,6 +67,7 @@ int main(int argc, char *argv[])
          * this call runs ONLY if the exec failed.
          * -------------------------------------------------------------- */
 
+        execvp(argv[1], &argv[1]);
         perror("pantograph: execvp");
         _exit(127);     /* the shell's own code for "command not found" */
     }
@@ -90,7 +90,10 @@ int main(int argc, char *argv[])
      * A parent that never waits leaves a zombie -- Task 2 is about
      * exactly that, so get this line right and you will have made none.
      * ------------------------------------------------------------------ */
-
+    if (waitpid(child, &status, 0) < 0) {
+        perror("pantograph: waitpid");
+        return 1;
+    }
     if (WIFEXITED(status)) {
         printf("pantograph: copy %d finished -- exit status %d\n",
                (int)child, WEXITSTATUS(status));

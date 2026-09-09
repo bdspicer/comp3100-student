@@ -13,9 +13,11 @@ differed* — beats a confident sentence you don't believe, and it tells
 me where to start when you bring it to studio.
 
 **Name:**
+Daniel Spicer
 **Week:**
+02
 **Work Order No.:**
-
+02
 ## Milestone 1
 **What I did:**
 1. I viewed hello-brassbridge.c with the "cat" command.
@@ -89,5 +91,5 @@ Dominic also helped me when my "make -C check m2" gave me an error--I just had t
 
 ## Time spent
 
-Roughly how long this took, start to finish: 2 hours
+Roughly how long this took, start to finish: 2.5 hours
 *No wrong answer — this just helps calibrate future work orders.*
